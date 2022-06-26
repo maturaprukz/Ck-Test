@@ -41,7 +41,6 @@ const Table = () => {
   return (
     <>
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
-      <h1>TEst</h1>
       <br/>
       <Datepicker />
       <br/>
