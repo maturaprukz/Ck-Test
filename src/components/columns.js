@@ -1,0 +1,34 @@
+import { format } from "date-fns"
+
+
+export const COLUMNS = [
+    {
+        Header: 'Id',
+        accessor: 'id'
+    },
+    {
+        Header: 'First Name',
+        accessor: 'first_name'
+    },
+    {
+        Header: 'Last Name',
+        accessor: 'last_name'
+    },
+    {
+        Header: 'Email',
+        accessor: 'email'
+    },
+    {
+        Header: 'Date of Birth',
+        accessor: 'date_of_birth',
+        Cell : ({ value }) => { return format(new Date (value), 'MM/dd/yyyy')}
+    },
+    {
+        Header: 'Country',
+        accessor: 'country'
+    },
+    {
+        Header: 'Phone',
+        accessor: 'phone'
+    },
+]
